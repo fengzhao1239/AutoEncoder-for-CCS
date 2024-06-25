@@ -74,7 +74,6 @@ class PermAE(nn.Module):
     def forward(self, x):
         x = x.unsqueeze(1)  # add a channel dimension
         x = self.encode_conv(x)  # CNN encode
-
         x = x.view(x.size(0), -1)  # flatten
         x = self.encode_fc(x)  # MLP
 
