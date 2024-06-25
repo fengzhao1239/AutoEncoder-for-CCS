@@ -5,7 +5,7 @@ import torch.nn.functional as F
 
 """
 The 3D permeability field (also state variable) has shape: [8, 40, 40], in a mini-batch: [N, 8, 40, 40].
-We would like to map it the latent space with dimension num = 256. (a hyper-parameter needed to be tuned)
+We would like to map it the latent space with dimension num = 128. (a hyper-parameter needed to be tuned)
 """
 
 
